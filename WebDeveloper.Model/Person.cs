@@ -41,7 +41,7 @@ namespace WebDeveloper.Model
         public string MiddleName { get; set; }
 
         [Required(ErrorMessage = "This Last Name is required.")]
-        [StringLength(50, ErrorMessage = "This field required 50 characters.")]
+        [StringLength(50, ErrorMessage = "Max 50 characters.")]
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
