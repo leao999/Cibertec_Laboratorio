@@ -48,6 +48,7 @@ namespace WebDeveloper.Model
         [StringLength(10)]
         public string Suffix { get; set; }
 
+        [Required(ErrorMessage = "Email Promotion is required.")]
         public int EmailPromotion { get; set; }
 
         [Column(TypeName = "xml")]
